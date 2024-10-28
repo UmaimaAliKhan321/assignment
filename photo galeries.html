@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Photo galeries</title>
+</head>
+<style>
+    header{
+        text-align: center;
+        border-width: 10px ;
+        background-color:rgb(151, 76, 113);
+        padding:30px;
+        border-radius: 30px;
+    }
+    .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+
+    /*.lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+        }
+
+        .lightbox:target {
+            display: flex;
+        }*/
+</style>
+<body>
+    <div class="container">
+    <header>
+        <h1><font size="15"><marquee behavior="alternate" direction="right" scrollamount="20" size="40">~** Photo galeries ~**</marquee></font></h1>
+    </header>
+    <div class="galeries">
+        <a href="#lightbox1">
+        <img src="a.jpg" alt="Transformation 1">
+        </a>
+        <div class="caption">before and after tranformation</div>
+        <a href="lightbox2">
+            <img src="b.jpg" alt="workout Technique 1">
+        </a>
+        <div class="caption">Workout Technique 1</div>
+        <a href="#lightbox3">
+            <img src="c.jpg" alt="Transformation 2">
+        </a>
+        <div class="caption">Before & After Transformation 2</div>
+        <a href="#lightbox4">
+            <img src="d.jpg" alt="Workout Technique 2">
+        </a>
+        <div class="caption">Workout Technique 2</div>
+        <a href="#lightbox5">
+            <img src="gm.jpg" alt="Transformation 3">
+        </a>
+        <div class="caption">Before & After Transformation 3</div>
+    </div>
+    </div>
+    <div id="lightbox1" class="lightbox">
+        <span class="close" onclick="location.href='#'">&times;</span>
+        <img src="hijpg" alt="Transformation 1">
+    </div>
+</body>
+</html>

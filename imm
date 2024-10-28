@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stylish Image Gallery</title>
+  <style>
+    /* Reset styles for padding and margin */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Basic body styling */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f3f3f3;
+      color: #333;
+    }
+
+    /* Container styling */
+    .gallery-container {
+      width: 90%;
+      max-width: 1200px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Title styling */
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 2rem;
+      color: #555;
+    }
+
+    /* Grid styling */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    /* Image styling */
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Image properties */
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      transition: transform 0.3s ease;
+    }
+
+    /* Hover effect on images */
+    .gallery-item:hover img {
+      transform: scale(1.1);
+      filter: brightness(0.8);
+    }
+
+    /* Caption styling */
+    .caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    /* Show caption on hover */
+    .gallery-item:hover .caption {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="gallery-container">
+    <h1>Image Gallery</h1>
+    <div class="gallery-grid">
+      <!-- Image 1 -->
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/250x250" alt="Image 1">
+        <div class="caption">Beautiful Landscape</div>
+      </div>
+
+      <!-- Image 2 -->
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/250x250" alt="Image 2">
+        <div class="caption">City Skyline</div>
+      </div>
+
+      <!-- Image 3 -->
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/250x250" alt="Image 3">
+        <div class="caption">Mountain View</div>
+      </div>
+
+      <!-- Image 4 -->
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/250x250" alt="Image 4">
+        <div class="caption">Ocean Sunset</div>
+      </div>
+
+      <!-- Additional images -->
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/250x250" alt="Image 5">
+        <div class="caption">Forest Path</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/250x250" alt="Image 6">
+        <div class="caption">Desert Sand</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+i

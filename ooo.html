@@ -1,0 +1,207 @@
+html
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Routines | FitLife Wellness</title>
+    <style>
+        /* CSS Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Style */
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f7f7f7;
+        }
+
+        /* Header Style */
+        header {
+            background-color: #3e8e41;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        /* Navigation Menu */
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            padding: 10px;
+            background-color: #2f7e3d;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 15px;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background-color: #3e8e41;
+            border-radius: 5px;
+        }
+
+        /* Main Content */
+        .main-content {
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Typography */
+        h1 {
+            font-size: 2em;
+            color: #3e8e41;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #2f7e3d;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        /* Workout Routine Section */
+        .workout {
+            margin-bottom: 30px;
+        }
+        .workout img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        .exercise-details {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+        }
+
+        /* Pagination */
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .pagination a {
+            text-decoration: none;
+            padding: 8px 12px;
+            color: #3e8e41;
+            font-weight: bold;
+            border: 1px solid #3e8e41;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        .pagination a:hover {
+            background-color: #3e8e41;
+            color: white;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2f7e3d;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Workout Routines</h1>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="workouts.html">Workouts</a>
+        <a href="nutrition.html">Nutrition</a>
+        <a href="wellness.html">Wellness</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        
+        <!-- Workout Routine 1 -->
+        <div class="workout">
+            <h2>Full Body Strength</h2>
+            <img src="https://via.placeholder.com/600x400" alt="Full Body Workout">
+            <p>This workout targets all major muscle groups, helping you build strength and endurance.</p>
+            <div class="exercise-details">
+                <p><strong>Squats:</strong> 3 sets x 12 reps</p>
+                <p><strong>Push-Ups:</strong> 3 sets x 15 reps</p>
+                <p><strong>Plank:</strong> 3 sets x 30 seconds</p>
+            </div>
+        </div>
+
+        <!-- Workout Routine 2 -->
+        <div class="workout">
+            <h2>Upper Body Circuit</h2>
+            <img src="https://via.placeholder.com/600x400" alt="Upper Body Workout">
+            <p>Boost your upper body strength with this circuit focused on arms, shoulders, and chest.</p>
+            <div class="exercise-details">
+                <p><strong>Dumbbell Curls:</strong> 3 sets x 12 reps</p>
+                <p><strong>Tricep Dips:</strong> 3 sets x 10 reps</p>
+                <p><strong>Shoulder Press:</strong> 3 sets x 12 reps</p>
+            </div>
+        </div>
+
+        <!-- Workout Routine 3 -->
+        <div class="workout">
+            <h2>Core and Abs</h2>
+            <img src="https://via.placeholder.com/600x400" alt="Core Workout">
+            <p>This core-focused routine helps build abdominal strength and stability.</p>
+            <div class="exercise-details">
+                <p><strong>Crunches:</strong> 3 sets x 15 reps</p>
+                <p><strong>Leg Raises:</strong> 3 sets x 12 reps</p>
+                <p><strong>Russian Twists:</strong> 3 sets x 20 reps (10 each side)</p>
+            </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination">
+            <a href="#">&laquo; Prev</a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">Next &raquo;</a>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 FitLife Wellness. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+Explanation
+Header and Navigation Menu: Includes a simple header and links to other pages for navigation.
+Workout Routines: Each workout has a title, image, description, and specific exercises with sets and reps.
+Pagination: A simple pagination section allows users to navigate to different pages of workouts.
+Footer: Basic footer with copyright information.
+This page layout is clean, organized, and visually engaging to keep users interested in exploring workout plans.

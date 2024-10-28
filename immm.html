@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Internal CSS */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .gallery img {
+            width: calc(33.333% - 10px);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        .caption {
+            text-align: center;
+            margin-top: 5px;
+            font-size: 14px;
+        }
+
+        /* Lightbox styles */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+        }
+
+        .lightbox:target {
+            display: flex;
+        }
+
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: white;
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .gallery img {
+                width: calc(50% - 10px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery img {
+                width: calc(100% - 10px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Photo Gallery</h1>
+        <div class="gallery">
+            <a href="#lightbox1">
+                <img src="a.jpg" alt="Transformation 1">
+            </a>
+            <div class="caption">Before & After Transformation 1</div>
+            <a href="#lightbox2">
+                <img src="b.jpg" alt="Workout Technique 1">
+            </a>
+            <div class="caption">Workout Technique 1</div>
+            <a href="#lightbox3">
+                <img src="c.jpg" alt="Transformation 2">
+            </a>
+            <div class="caption">Before & After Transformation 2</div>
+            <a href="#lightbox4">
+                <img src="d.jpg" alt="Workout Technique 2">
+            </a>
+            <div class="caption">Workout Technique 2</div>
+            <a href="#lightbox5">
+                <img src="gm.jpg" alt="Transformation 3">
+            </a>
+            <div class="caption">Before & After Transformation 3</div>
+            <img src="hi.jpg">
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox1" class="lightbox">
+        <span class="close" onclick="location.href='#'">&times;</span>
+        <img src="hijpg" alt="Transformation 1">
+    </div>
+    <div id="lightbox2" class="lightbox">
+        <span class="close" onclick="location.href='#'">&times;</span>
+        <img src="meal.jpg" alt="Workout Technique 1">
+    </div>
+    <div id="lightbox3" class="lightbox">
+        <span class="close" onclick="location.href='#'">&times;</span>
+        <img src="r.jpg" alt="Transformation 2">
+    </div>
+    <div id="lightbox4" class="lightbox">
+        <span class="close" onclick="location.href='#'">&times;</span>
+        <img src="pp.jpg" alt="Workout Technique 2">
+    </div>
+    <div id="lightbox5" class="lightbox">
+        <span class="close" onclick="location.href='#'">&times;</span>
+        <img src="u.jpg" alt="Transformation 3">
+    </div>
+</body>
+</html>

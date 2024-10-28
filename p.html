@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    <style>
+        .gallery-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.gallery-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.caption {
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
+    </style>
+</head>
+<body>
+    <div class="gallery-container">
+        <h1 class="gallery-title">Workout Techniques & Transformation Stories</h1>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <a href="a.jpg" data-lightbox="gallery" data-title="Transformation Story 1">
+                    <img src="a.jpg" alt="Transformation Story 1">
+                </a>
+                <div class="caption">Transformation Story 1</div>
+            </div>
+            <div class="gallery-item">
+                <a href="b.jpg" data-lightbox="gallery" data-title="Strength Training">
+                    <img src="b.jpg" alt="Strength Training">
+                </a>
+                <div class="caption">Strength Training</div>
+            </div>
+            <div class="gallery-item">
+                <a href="cardio.avif" data-lightbox="gallery" data-title="Cardio Routine">
+                    <img src="cardio.avif" alt="Cardio Routine">
+                </a>
+                <div class="caption">Cardio Routine</div>
+            </div>
+            <div class="gallery-item">
+                <a href="c.jpg" data-lightbox="gallery" data-title="HIIT">
+                    <img src="c.jpg" alt="HIIT">
+                </a>
+                <div class="caption">HIIT</div>
+            </div>
+            <div class="gallery-item">
+                <a href="gm.jpg" data-lightbox="gallery" data-title="Yoga Transformation">
+                    <img src="u.jpg" alt="Yoga Transformation">
+                </a>
+                <div class="caption">Yoga Transformation</div>
+            </div>
+            <div class="gallery-item">
+                <a href="loose.jpg" data-lightbox="gallery" data-title="Weight Loss Journey">
+                    <img src="loose.jpg" alt="Weight Loss Journey">
+                </a>
+                <div class="caption">Weight Loss Journey</div>
+            </div>
+            <div class="gallery-item">
+                <a href="core.avif" data-lightbox="gallery" data-title="Core Workout">
+                    <img src="core.avif" alt="Core Workout">
+                </a>
+                <div class="caption">Core Workout</div>
+            </div>
+            <div class="gallery-item">
+                <a href="full.jpg" data-lightbox="gallery" data-title="Full-Body Workout">
+                    <img src="full.jpg" alt="Full-Body Workout">
+                </a>
+                <div class="caption">Full-Body Workout</div>
+            </div>
+            <div class="gallery-item">
+                <a href="flexibility.jpg" data-lightbox="gallery" data-title="Flexibility & Mobility">
+                    <img src="flexibility.jpg" alt="Flexibility & Mobility">
+                </a>
+                <div class="caption">Flexibility & Mobility</div>
+            </div>
+            <div class="gallery-item">
+                <a href="upper.avif" data-lightbox="gallery" data-title="Upper Body Training">
+                    <img src="upper.avif" alt="Upper Body Training">
+                </a>
+                <div class="caption">Upper Body Training</div>
+            </div>
+            <div class="gallery-item">
+                <a href="pp.jpg" data-lightbox="gallery" data-title="Lower Body Strength">
+                    <img src="pp.jpg" alt="Lower Body Strength">
+                </a>
+                <div class="caption">Lower Body Strength</div>
+            </div>
+            <div class="gallery-item">
+                <a href="post.avif" data-lightbox="gallery" data-title="Post-Workout Recovery">
+                    <img src="post.avif" alt="Post-Workout Recovery">
+                </a>
+                <div class="caption">Post-Workout Recovery</div>
+            </div>
+            <div class="gallery-item">
+                <a href="home.jpg" data-lightbox="gallery" data-title="Home Workout"></a>
+                <img src="home.jpg" alt="Home Workout">
+            </a>
+            <div class="caption">Home Workout</div>
+        </div>
+        <div class="gallery-item">
+            <a href="group.webp" data-lightbox="gallery" data-title="Group Fitness Motivation">
+                <img src="group.webp" alt="Group Fitness Motivation">
+            </a>
+            <div class="caption">Group Fitness Motivation</div>
+        </div>
+        <div class="gallery-item">
+            <a href="balance.jpg" data-lightbox="gallery" data-title="Balance & Stability Training">
+                <img src="balance.jpg" alt="Balance & Stability Training">
+            </a>
+            <div class="caption">Balance & Stability Training</div>
+        </div>
+    </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    
+</body>
+</html>
